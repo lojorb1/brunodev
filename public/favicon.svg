@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="50%" stop-color="#7c4dff" />
+      <stop offset="100%" stop-color="#00ff9d" />
+    </linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1127" />
+      <stop offset="100%" stop-color="#05060f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect x="3" y="3" width="58" height="58" rx="16" fill="url(#bg)" stroke="url(#g1)" stroke-width="2.5" />
+
+  <!-- Code bracket < -->
+  <path d="M18 23 L10 32 L18 41" fill="none" stroke="#00e5ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Letter B styled -->
+  <path d="M25 20 H35 C38.5 20 41.5 22.5 41.5 26 C41.5 28.5 40 30.5 38 31.5 C40.8 32.5 42.5 35 42.5 38 C42.5 42 39.5 44 35 44 H25 V20 Z M30 25 V29.5 H34.5 C35.8 29.5 36.8 28.5 36.8 27.2 C36.8 26 35.8 25 34.5 25 H30 Z M30 34.5 V39 H35 C36.5 39 37.8 37.8 37.8 36.5 C37.8 35.2 36.5 34.5 35 34.5 H30 Z" fill="url(#g1)" />
+
+  <!-- Code bracket / > -->
+  <path d="M46 23 L54 32 L46 41" fill="none" stroke="#00ff9d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

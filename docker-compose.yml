@@ -1,0 +1,18 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: brunodev-web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - SMTP_HOST=${SMTP_HOST:-smtp.seudominio.com}
+      - SMTP_PORT=${SMTP_PORT:-465}
+      - SMTP_USER=${SMTP_USER:-contact@brunodev.eu}
+      - SMTP_PASS=${SMTP_PASS:-sua_senha}
+      - SMTP_FROM=${SMTP_FROM:-BrunoDEV Website <contact@brunodev.eu>}
+      - CONTACT_TO=${CONTACT_TO:-contact@brunodev.eu}
